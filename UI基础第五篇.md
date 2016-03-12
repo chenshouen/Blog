@@ -15,11 +15,11 @@
 - Autolayout 布局UI界面,2个核心概念，参照和约束
      - 三个常用面板
      - 对齐面板
-     ![](image/UI基础010.png)
+       － ![](image/UI基础010.png)
      - 相对面板
-     ![](image/UI基础011.png)
+       － ![](image/UI基础011.png)
      - 约束处理面板
-     ![](image/UI基础012.png)
+       － ![](image/UI基础012.png)
 - 代码实现Autolayout
 
   ```objc
@@ -92,8 +92,8 @@ NSDictionary *viewsDictionary = @{ @"deleteButton": deleteButton, @"cancelButton
 - Masonry框架
    - 相当方便编写Autolayout代码，并且可读性也极高
    - 如果添加下面的2个宏，那么就可以忽略mas前缀
-      - #####define MAS_SHORTHAND_GLOBALS
-      - #####define MAS_SHORTHAND
+      - define MAS_SHORTHAND_GLOBALS
+      - define MAS_SHORTHAND
       - 注意：这个宏一定要添加到#import "Masonry.h"前面
 
 
