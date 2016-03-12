@@ -96,5 +96,26 @@ NSDictionary *viewsDictionary = @{ @"deleteButton": deleteButton, @"cancelButton
       - define MAS_SHORTHAND
       - 注意：这个宏一定要添加到#import "Masonry.h"前面
 
+- Masonry约束的类型
+```objc
+1.尺寸：width\height\size
+2.边界：left\leading\right\trailing\top\bottom
+3.中心点：center\centerX\centerY
+4.边界：edges
+```
+- Masonry添加约束的方法
+
+```objc
+// 这个方法只会添加新的约束
+ [view makeConstraints:^(MASConstraintMaker *make) {}];
+
+// 这个方法会将以前的所有约束删掉，添加新的约束
+ [view remakeConstraints:^(MASConstraintMaker *make) {}];
+
+ // 这个方法将会覆盖以前的某些特定的约束
+ [view updateConstraints:^(MASConstraintMaker *make) {}];
+```
+
+
 
 
