@@ -85,13 +85,13 @@
 ```
 - Cell循环利用方法二
   
-   - 定义一个全局变量
+     - 定义一个全局变量
 ```objc
 // 定义重用标识
 NSString *ID = @"cell";
 ```
 
-   - 注册某个标识对应的cell类型
+     - 注册某个标识对应的cell类型
 ```objc
 // 在这个方法中注册cell
 - (void)viewDidLoad {
@@ -101,7 +101,7 @@ NSString *ID = @"cell";
 }
 ```
 
-   - 在数据源方法中返回cell
+     - 在数据源方法中返回cell
 ```objc
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -164,7 +164,7 @@ cell.backgroundView = backgroundView;
 
 // 设置指示器
  cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-cell.accessoryView = [[UISwitch alloc] init];
+ cell.accessoryView = [[UISwitch alloc] init];
 ```
 
 
