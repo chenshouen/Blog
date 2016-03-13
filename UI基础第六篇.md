@@ -85,14 +85,15 @@
 ```
 - Cell循环利用方法二
   
-     - 定义一个全局变量
 ```objc
+   - 定义一个全局变量
 // 定义重用标识
 NSString *ID = @"cell";
 ```
 
-     - 注册某个标识对应的cell类型
+     
 ```objc
+- 注册某个标识对应的cell类型
 // 在这个方法中注册cell
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -100,9 +101,8 @@ NSString *ID = @"cell";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
 }
 ```
-
-     - 在数据源方法中返回cell
 ```objc
+ - 在数据源方法中返回cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // 1.去缓存池中查找cell
