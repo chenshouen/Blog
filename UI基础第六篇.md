@@ -84,25 +84,21 @@
 }
 ```
 - Cell循环利用方法二
-
-     - 定义一个全局变量
+   - 定义一个全局变量
 ```objc
 // 定义重用标识
 NSString *ID = @"cell";
 ```
-     - 注册某个标识对应的cell类型
-
+   - 注册某个标识对应的cell类型
 ```objc
 // 在这个方法中注册cell
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     // 注册某个标识对应的cell类型
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
 }
 ```
-     - 在数据源方法中返回cell
-
+   - 在数据源方法中返回cell
 ```objc
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -118,9 +114,9 @@ NSString *ID = @"cell";
 
 - Cell循环利用方法三
      - 在storyboard中设置UITableView的Dynamic Prototypes Cell
-![](images/UI基础018.png)
+![](image/UI基础018.png)
      - 设置cell的重用标识
-![](images/UI基础019.png)
+![](image/UI基础019.png)
      - 在代码中利用重用标识获取cell
 ```objc
 // 0.重用标识
