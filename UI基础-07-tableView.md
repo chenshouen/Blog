@@ -38,7 +38,7 @@
             - 需要提供一个模型属性，重写模型的set方法，在这个方法中设置模型数据到子控件上
             - 也可以将创建获得cell的代码封装起来（比如cellWithTableView:方法）
     
-- ### 代码自定义cell(使用frame)
+ - ### 代码自定义cell(使用frame)
         - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell
             - 在initWithStyle:reuseIdentifier:方法中
                 - 添加子控件
