@@ -15,6 +15,7 @@
             - 利用重用标识找到cell
             - 给cell传递模型数据<br>
  ![](image/UI基础024.png)
+
         - 4.在XMGDealCell中
             - 将storyboard中的子控件连线到类扩展中<br>
  ![](image/UI基础025.png)
@@ -22,7 +23,7 @@
   ![](image/UI基础026.png)
  ![](image/UI基础027.png)
     
-     - ### xib自定义cell
+    - ### xib自定义cell
         - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br>
         - 2.创建一个xib文件（文件名建议跟cell的类名一样），比如XMGDealCell.xib
             - 拖拽一个UITableViewCell出来
@@ -50,7 +51,7 @@
             - 利用重用标识找到cell（如果没有注册类，就需要手动创建cell）
             - 给cell传递模型数据
             - 也可以将创建获得cell的代码封装起来（比如cellWithTableView:方法）
-            
+   
     - ### 代码自定义cell(使用autolayout)
         - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell
             - 在initWithStyle:reuseIdentifier:方法中
