@@ -14,13 +14,12 @@
         - 3.在控制器中
             - 利用重用标识找到cell
             - 给cell传递模型数据<br>
- ![](image/UI基础024.png)
-
+![](image/UI基础024.png)
         - 4.在XMGDealCell中
             - 将storyboard中的子控件连线到类扩展中<br>
  ![](image/UI基础025.png)
             - 需要提供一个模型属性，重写模型的set方法，在这个方法中设置模型数据到子控件上<br>
-  ![](image/UI基础026.png)
+ ![](image/UI基础026.png)
  ![](image/UI基础027.png)
     
     - ### xib自定义cell
